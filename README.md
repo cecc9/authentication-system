@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sistema de Autenticación
 
-## Getting Started
+Este es un sistema de autenticación realizado en NEXTJS 14 y SUPABASE que permite a los usuarios autenticarse en una aplicación web. A continuación, se detallan algunas características importantes del sistema de autenticación y cómo levantarlo de manera local.
 
-First, run the development server:
+## Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-   Registro de usuarios: Permite a los usuarios crear una cuenta en la aplicación proporcionando su nombre de usuario, email y contraseña.
+-   Inicio de sesión: Los usuarios pueden iniciar sesión en la aplicación utilizando sus credenciales registradas.
+-   Protección de rutas: El sistema de autenticación garantiza que solo los usuarios autenticados puedan acceder a ciertas rutas o funcionalidades de la aplicación.
+-   Cierre de sesión: Los usuarios pueden cerrar sesión en la aplicación para finalizar su sesión actual.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Cómo levantar el sistema de manera local
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clona este repositorio en tu máquina local.
+2. Abre una terminal y navega hasta el directorio raíz del proyecto.
+3. Ejecuta el comando `npm install` para instalar las dependencias del proyecto.
+4. Configura las variables de entorno necesarias, como las credenciales de la base de datos y las claves de API.
+5. Ejecuta el comando `npm run dev` para iniciar el servidor de desarrollo.
+6. Abre tu navegador web y visita `http://localhost:3000` para acceder a la aplicación.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+¡Listo! Ahora puedes comenzar a utilizar el sistema de autenticación en tu entorno local.
