@@ -7,7 +7,9 @@ const HomePage = () => {
 
     return (
         <div className='w-full h-full flex justify-center items-center flex-col gap-7'>
-            <h2 className='text-3xl font-semibold'>Sistema de Autenticacion</h2>
+            <h2 className='text-3xl font-semibold text-center'>
+                Sistema de Autenticacion
+            </h2>
             <div className='flex gap-5'>
                 <NextIcon />
                 <SupabaseIcon />
