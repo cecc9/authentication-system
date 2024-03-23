@@ -1,10 +1,11 @@
 'use server';
 
+import { cookies } from 'next/headers';
+
 import { LoginFormSchema } from '@/validations/login-form-schema';
 import { ZodError } from 'zod';
 import { AuthStatusType } from '@/types/auth-status';
 import { createClient } from '@/supabase/server';
-import { cookies } from 'next/headers';
 
 export const signInAction = async (
     prevState: AuthStatusType | null,

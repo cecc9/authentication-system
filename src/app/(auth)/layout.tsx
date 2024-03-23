@@ -10,12 +10,13 @@ interface AuthLayoutProps {
 
 export default async function AuthLayout({ children }: AuthLayoutProps) {
     // aqui comprobar la session del usuario (dudando si lo hago aqui)
-    const { session } = await getSessionClient();
+    // const { session } = await getSessionClient();
 
-    console.log('render layout auth...');
-    if (session) {
-        return redirect('/dashboard');
-    }
+    // console.log('render layout auth...');
+    // if (session) {
+    //     // cuando hay session se vuelve a renderizar esto, y redirige a dashboard, por eso la pantalla en blanco...
+    //     return redirect('/dashboard');
+    // }
 
     return (
         <Fragment>
